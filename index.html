@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Minuman Kekinian</title>
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="images/coffe cup.png" class="index"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="texBox">
+                <h2>That's What <br><span>I like</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. error consequater tempore dolorem beatae quae, fugit digmissimos ad explicabo culpa consectetur!</p>
+                <a href="#">View All Proudcts</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/coffe cup.png" class="coffe cup">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/coffe cup.jpg" onclick="imgSlider('images/coffe cup.jpg');changeBgColor('#CEAEDA')"></li>
+            <li><img src="images/coffe cup 1.jpg" onclick="imgSlider('images/coffe cup 1.jpg');changeBgColor('#C0AFC6')"></li>
+            <li><img src="images/coffe cup 2.png" onclick="imgSlider('images/coffe cup 2.png');changeBgColor('#89838E')"></li>
+        </ul>
+        <ul class="sosialMedia">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+
+        </ul>
+
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.coffe cup').src = anything;
+        }
+
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
